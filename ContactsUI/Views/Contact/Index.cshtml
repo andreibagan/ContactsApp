@@ -1,0 +1,11 @@
+﻿@model IEnumerable<ContactViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="text-center mb-3"><i class="fas fa-comments text-success"></i> Contact History</h1>
+
+<div id="view-all">
+    @await Html.PartialAsync("_ViewAll", Model)
+</div>
